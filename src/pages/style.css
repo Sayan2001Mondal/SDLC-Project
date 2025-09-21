@@ -1,0 +1,1198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: Clash Display;
+  src: url("ClashDisplay_Complete");
+}
+
+:root {
+  --color-1: #000000;
+  --color-2: gray;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+.container {
+  max-width: 1750px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+header {
+  background-color: #d7d7d7;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navlist {
+  display: flex;
+  align-items: center;
+  border-radius: 58px;
+  background-color: white;
+  padding: 5px 5px;
+}
+
+.logo > img {
+  display: block;
+  width: 191px;
+  height: 74px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 25px 30px;
+  border-radius: 110px;
+}
+li:nth-child(7),
+li:nth-child(8) {
+  padding: 0px 30px;
+}
+li:nth-child(1):hover {
+  background-color: black;
+  transition: background 2s ease;
+}
+li:nth-child(2):hover {
+  background-color: #4e4e4e;
+  transition: background 2s ease;
+}
+li:nth-child(3):hover {
+  background-color: #4e4e4e;
+  transition: background 2s ease;
+}
+li:nth-child(4):hover {
+  background-color: black;
+  transition: background 2s ease;
+}
+li:nth-child(5):hover {
+  background-color: black;
+  transition: background 2s ease;
+}
+li:nth-child(6):hover {
+  background-color: #4e4e4e;
+  transition: background 2s ease;
+}
+.navlist > li > a {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+}
+.features {
+  border: none;
+  background-color: transparent;
+  width: 90px;
+}
+.search-bar {
+  position: relative;
+}
+.search {
+  height: 60px;
+  width: 200px;
+  border-radius: 74px;
+  background-color: #4e4e4e;
+  padding-left: 30px;
+  position: relative;
+}
+.search-bar > i {
+  position: absolute;
+  top: 21px;
+  left: 35px;
+  z-index: 100;
+  color: white;
+}
+.search::placeholder {
+  /* Edge 12 -18 */
+  color: white;
+}
+.cart {
+  display: inline-block;
+
+  background-color: #4e4e4e;
+  border-radius: 32px;
+  padding: 21px 19px;
+  margin-right: 5px;
+}
+.cart > i {
+  color: white;
+}
+.create-account-button {
+  display: inline-block;
+  padding: 19px 41px 19px 18px;
+  border-radius: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: gray;
+  position: relative;
+  overflow: hidden;
+}
+
+.create-account-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.create-account-button:hover::before {
+  opacity: 1;
+}
+.create-account-button:hover {
+  box-shadow: 0px 0px 20px 10px gray;
+}
+.create-account-button > a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  z-index: 100;
+}
+.create-account-button > p {
+  z-index: 100;
+  color: #000000;
+}
+.create-account-button > .arrow {
+  z-index: 100;
+}
+.arrow {
+  padding: 11px 10px;
+  background-color: #4e4e4e;
+  border-radius: 29px;
+  margin-left: 40px;
+}
+.arrow > i {
+  color: white;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 1200px;
+  background-color: #d7d7d7;
+  border-radius: 5px;
+  padding-top: 224px;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 124px;
+  font-weight: 400px;
+  font-style: normal;
+  text-transform: capitalize;
+  margin-bottom: 80px;
+}
+.button-label-button {
+  display: inline-block;
+  padding: 19px 21px 19px 18px;
+  border-radius: 58px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: gray;
+  position: relative;
+  overflow: hidden;
+  max-width: 228px;
+  margin-bottom: 95px;
+}
+.button-label-button > .arrow {
+  z-index: 100;
+}
+
+.button-label-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.button-label-button:hover::before {
+  opacity: 1;
+}
+.button-label-button:hover {
+  box-shadow: 0px 0px 20px 10px gray;
+}
+.button-label-button > a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  z-index: 100;
+}
+.button-label-button > p {
+  z-index: 100;
+  color: #000000;
+}
+.button-label-button > .arrow {
+  z-index: 100;
+}
+.col50 {
+  max-width: 50%;
+  flex: 0 0 50%;
+  padding: 0 15px;
+}
+.card1,
+.card2 {
+  background-color: white;
+  border-radius: 49px;
+  padding: 30px 25px;
+  display: flex;
+}
+.right1 {
+  margin-left: 76px;
+}
+.right1 > h3 {
+  font-size: 18px;
+  margin-top: 90px;
+  margin-bottom: 18px;
+}
+.right1 > p {
+  margin-bottom: 13px;
+  color: gray;
+}
+.explore {
+  text-align: center;
+  display: inline-block;
+  padding: 19px 21px 19px 18px;
+  border-radius: 58px;
+  border: 1px solid black;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.explore::before {
+  z-index: 0;
+}
+.explore > * {
+  position: relative;
+  z-index: 1;
+}
+.explore::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.explore:hover::before {
+  opacity: 1;
+}
+.explore:hover {
+  box-shadow: 0px 0px 20px 10px gray;
+}
+.explore > a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+.explore > p {
+  z-index: 1;
+  color: #000000;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  padding-top: 124px;
+  padding-bottom: 112px;
+}
+.col10 {
+  max-width: 10%;
+  flex: 0 0 10%;
+  padding: 0 15px;
+}
+.col70 {
+  max-width: 70%;
+  flex: 0 0 70%;
+  padding: 0 15px;
+}
+.reverse {
+  transform: rotate(90deg);
+}
+
+.reverse span::after {
+  content: "";
+  display: inline-block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  margin-left: 130px;
+  margin-top: -35px;
+  vertical-align: middle;
+}
+
+.who>h2{
+  font-size: 60px;
+  margin-bottom:110px
+}
+.col20{
+   max-width: 20%;
+  flex: 0 0 20%;
+  padding: 0 15px;
+}
+.achivments{
+  margin-top: 60px;
+  text-align: center;
+  margin-left: 150px;
+}
+.discuss{
+  display: inline-block;
+  padding: 19px 20px 19px 20px;
+  border-radius: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: gray;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.discuss::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.discuss:hover::before {
+  opacity: 1;
+}
+.discuss:hover {
+  box-shadow: 0px 0px 20px 10px gray;
+}
+.discuss > a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  z-index: 100;
+}
+.discuss > p {
+  z-index: 100;
+  color: #000000;
+}
+.discuss > .arrow {
+  z-index: 100;
+  margin-left: 10px;
+}
+.achivments>span{
+  display: inline-block;
+margin-bottom: 20px;
+}
+.achivments>p{
+  
+margin-bottom: 20px;
+}
+.journey{
+  position: relative;
+  width: 100%;
+  padding-top: 124px;
+  padding-bottom: 112px;
+}
+.journey-up>span:nth-child(1),.journey-up>span:nth-child(2),.journey-up>span:nth-child(3){
+  display: flex;
+  text-transform: capitalize;
+}
+.journey-up>span>img{
+  min-height: 16px;
+  width: 87px;
+}
+.journey-up>span>h2{
+  font-size:60px ;
+}
+.journey-up>span:nth-child(1)>img{
+  margin-right: 20px;
+}
+.journey-up>span:nth-child(2)>img{
+  margin-left: 20px;
+}
+.third{
+margin-left:204px;
+}
+.diet-plans{
+  text-align: center;
+  display: inline-block;
+  padding: 25px 21px 19px 18px;
+  border-radius: 58px;
+  border: 1px solid black;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.diet-plans::before {
+  z-index: 0;
+}
+.diet-plans > * {
+  position: relative;
+  z-index: 1;
+}
+.diet-plans::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.diet-plans:hover::before {
+  opacity: 1;
+}
+.diet-plans:hover {
+  box-shadow: 0px 0px 20px 10px gray;
+}
+.diet-plans > a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+.diet-plans > p {
+  z-index: 1;
+  color: #000000;
+}
+.expert{
+  position: relative;
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 48px;
+  background-color: #EDEDED;
+}
+.choose>span{
+  display: inline-block;
+  margin-bottom: 51px;
+}
+.choose span::after {
+  content: "";
+  display: inline-block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  margin-left: 10px;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+.choose>h2{
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 58px;
+}
+.choose>p{
+  margin-bottom: 25px;
+}
+
+.tick{
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 23px;
+  margin: 60px 0px;
+}
+.tick>p{
+  margin-left: 36px;
+}
+.exp-right{
+  padding: 100px 226px;
+  background-color: white;
+  border-radius: 40px;
+
+}
+.center-card{
+  border-radius: 40px;
+  background-color:#d7d7d7;
+   text-align: center;
+     padding-top: 67px;
+  padding-left:  10px;
+  padding-right:  10px;
+  padding-bottom:  10px;
+}
+.center-card>p{
+  font-size: 80px;
+ 
+}
+.center-card>h4{
+  font-size: 50px;
+ text-transform: capitalize;
+ margin-bottom: 53px;
+}
+.lower{
+  padding: 40px 55px;
+ border-radius: 30px;
+ text-align: center;
+ background-color: white;
+}
+.lower>h5{
+text-transform: capitalize;
+font-size:25px;
+margin-bottom: 25px;
+}
+.lower>p{
+text-transform: capitalize;
+font-size:18px;
+}
+
+.trainer>.container>span{
+  display: inline-block;
+  margin-bottom: 50px;
+}
+  .trainer>.container>span::after {
+  content: "";
+  display: inline-block;
+  width: 120px;
+  height: 2px;
+  background: #000;
+  margin-left: 10px;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+.trainer{
+    position: relative;
+  width: 100%;
+  padding-top: 54px;
+  padding-bottom: 101px;
+  padding-left: 98px;
+  padding-right: 98px;
+
+}
+.trainer>.container{
+  overflow: visible;
+}
+.trainer>.container>h2{
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 45px;
+}
+.trainer>.container>p{
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 45px;
+}
+.trn-crd{
+  border-radius: 20px;
+  padding: 30px 50px 30px 50px;
+  text-transform: capitalize;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 80px;
+  z-index: 10;
+}
+.trn-crd>img{
+  margin-bottom: 30px;
+}
+.trn-crd>h4{
+  margin-bottom: 20px;
+}
+.trn-crd:hover{
+  box-shadow: 0 0 30px 3px;
+  transition: 0.5s ease;
+  transform: scale(1.2);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1750px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  h1 {
+    font-size: 100px;
+  }
+  
+  .journey-up span h2 {
+    font-size: 50px;
+  }
+  
+  .card1 {
+    padding: 25px 20px;
+  }
+  
+  .right1 {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  .navlist li {
+    padding: 20px 25px;
+  }
+  
+  h1 {
+    font-size: 85px;
+  }
+  
+  .who h2 {
+    font-size: 50px;
+  }
+  
+  .journey-up span h2 {
+    font-size: 45px;
+  }
+  
+  .choose h2 {
+    font-size: 50px;
+  }
+  
+  .trainer .container h2 {
+    font-size: 50px;
+  }
+  
+  .card1 {
+    padding: 20px 15px;
+  }
+  
+  .right1 {
+    margin-left: 40px;
+  }
+  
+  .right1 h3 {
+    font-size: 16px;
+  }
+  
+  .button-label-button, .create-account-button, .discuss, .explore {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navlist {
+    order: 3;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .banner {
+    padding-top: 150px;
+    min-height: 1000px;
+  }
+  
+  h1 {
+    font-size: 70px;
+  }
+  
+  .col50 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+  
+  .col70, .col20 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  
+  .achivments {
+    margin-left: 0;
+  }
+  
+  .journey-up span h2 {
+    font-size: 40px;
+  }
+  
+  .exp-right {
+    padding: 80px 150px;
+  }
+  
+  .col20 {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+    margin-bottom: 30px;
+  }
+  
+  .card1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 25px;
+  }
+  
+  .right1 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  
+  .button-label-button, .create-account-button {
+    padding: 12px 18px;
+  }
+  
+  .button-label-button p, .create-account-button p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .navlist {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  
+  .navlist li {
+    padding: 15px 20px;
+  }
+  
+  .search {
+    width: 150px;
+  }
+  
+  .create-account-button {
+    padding: 15px 30px 15px 15px;
+  }
+  
+  h1 {
+    font-size: 60px;
+  }
+  
+  .who h2 {
+    font-size: 40px;
+  }
+  
+  .col10 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+  
+  .reverse {
+    transform: rotate(0);
+    text-align: center;
+  }
+  
+  .reverse span::after {
+    display: none;
+  }
+  
+  .col70, .col20 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  .achivments {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  .journey-up span {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .journey-up span h2 {
+    font-size: 35px;
+  }
+  
+  .third {
+    margin-left: 0;
+  }
+  
+  .diet-plans {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  
+  .choose h2 {
+    font-size: 40px;
+  }
+  
+  .exp-right {
+    padding: 60px 100px;
+  }
+  
+  .center-card p {
+    font-size: 60px;
+  }
+  
+  .center-card h4 {
+    font-size: 40px;
+  }
+  
+  .trainer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .col20 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  
+  .card1 {
+    padding: 25px 20px;
+  }
+  
+  .button-label-button, .create-account-button {
+    padding: 10px 15px;
+  }
+  
+  .arrow {
+    padding: 8px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .navlist {
+    border-radius: 30px;
+  }
+  
+  .navlist li {
+    padding: 10px 15px;
+  }
+  
+  .search {
+    width: 120px;
+    height: 50px;
+  }
+  
+  .search-bar i {
+    top: 16px;
+    left: 30px;
+  }
+  
+  .cart {
+    padding: 16px 14px;
+  }
+  
+  .create-account-button {
+    padding: 12px 25px 12px 12px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .arrow {
+    padding: 8px;
+    margin-left: 20px;
+  }
+  
+  .banner {
+    padding-top: 100px;
+    min-height: 800px;
+  }
+  
+  h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .button-label-button {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 200px;
+  }
+  
+  .card1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+  }
+  
+  .right1 {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  
+  .right1 h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .who h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  
+  .journey-up span h2 {
+    font-size: 30px;
+  }
+  
+  .choose h2 {
+    font-size: 35px;
+  }
+  
+  .tick {
+    font-size: 18px;
+    margin: 40px 0;
+  }
+  
+  .exp-right {
+    padding: 40px 60px;
+  }
+  
+  .center-card {
+    padding-top: 40px;
+  }
+  
+  .center-card p {
+    font-size: 50px;
+  }
+  
+  .center-card h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .lower {
+    padding: 25px 35px;
+  }
+  
+  .trainer .container h2 {
+    font-size: 35px;
+  }
+  
+  .trainer .container p {
+    font-size: 20px;
+  }
+  
+  .trn-crd {
+    padding: 20px 30px;
+  }
+  
+  .col20 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  .explore, .discuss, .diet-plans {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .navbar {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .navlist {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  
+  .navlist li {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+  
+  .search-bar {
+    width: 100%;
+  }
+  
+  .search {
+    width: 100%;
+  }
+  
+  .create-account-button {
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  .button-label-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 200px;
+  }
+  
+  .who h2 {
+    font-size: 30px;
+  }
+  
+  .journey-up span h2 {
+    font-size: 25px;
+  }
+  
+  .choose h2 {
+    font-size: 30px;
+  }
+  
+  .exp-right {
+    padding: 30px 20px;
+  }
+  
+  .center-card p {
+    font-size: 40px;
+  }
+  
+  .center-card h4 {
+    font-size: 25px;
+  }
+  
+  .lower {
+    padding: 20px 25px;
+  }
+  
+  .trainer .container h2 {
+    font-size: 30px;
+  }
+  
+  .trainer .container p {
+    font-size: 18px;
+  }
+  
+  .trainer .container span::after {
+    width: 60px;
+  }
+  
+  .card1 {
+    padding: 15px 10px;
+  }
+  
+  .right1 h3 {
+    font-size: 16px;
+  }
+  
+  .right1 p {
+    font-size: 14px;
+  }
+  
+  .explore, .discuss, .diet-plans {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  
+  .button-label-button, .create-account-button {
+    padding: 8px 12px;
+  }
+  
+  .button-label-button p, .create-account-button p {
+    font-size: 12px;
+  }
+  
+  .arrow {
+    padding: 6px;
+    margin-left: 15px;
+  }
+}
+
+/* Orientation-based adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .banner {
+    padding-top: 80px;
+    min-height: 600px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .button-label-button {
+    margin-bottom: 40px;
+  }
+  
+  .card1 {
+    padding: 15px 10px;
+  }
+}
+
+/* High-resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Optional: Add higher resolution assets if available */
+}
+
+/* Print styles */
+@media print {
+  .navbar, .button-label-button, .create-account-button, .discuss, .diet-plans {
+    display: none !important;
+  }
+  
+  .card1 {
+    break-inside: avoid;
+  }
+}
+
