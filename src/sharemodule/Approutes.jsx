@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import Dashboard from "../pages/user/Dashboard"; // (watch spelling "Dashboard")
+import Dashboard from "../pages/user/DashBoard"; // (watch spelling "Dashboard")
 import Goals from "../pages/user/Goals";
 import DailyLogs from "../pages/user/Dailylogs";
 import AuthModals from "../sharemodule/AuthModals";
